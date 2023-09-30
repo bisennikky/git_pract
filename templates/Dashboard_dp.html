@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!--<meta name=description content="This site was generated with Anima. www.animaapp.com"/>-->
+  <!-- <link rel="shortcut icon" type=image/png href="https://animaproject.s3.amazonaws.com/home/favicon.png" /> -->
+  <meta http-equiv="refresh" content="5" name="viewport" content="width=1920, maximum-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="https://animaproject.s3.amazonaws.com/home/favicon.png" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="photo" />
+  <link rel="stylesheet" type="text/css" href="../static/css/dashboard_up.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/globals.css" />
+  <link rel="stylesheet" type="text/css" href="../static/css/styleguide.css" />
+</head>
+
+<body style="margin: 0; background: #ffffff">
+<!-- {{ data }} -->
+  <input type="hidden" id="anPageName" name="page" value="slide-16-9-5" />
+  <div class="container-center-horizontal">
+    <div class="slide-16-9-5 screen">
+      <img class="group-16" src="../static/img/group-16.png" alt="Group 16" />
+      <div class="overlap-group">
+        <div class="rectangle-59"></div>
+
+        <div class="first rectangle-60"></div>
+        <div class="first rectangle-67"></div>
+
+        <div class="second rectangle-61"></div>
+        <div class="second rectangle-68"></div>
+
+        <div class="third rectangle-62"></div>
+        <div class="third rectangle-69"></div>
+
+        <div class="fourth rectangle-63"></div>
+        <div class="fourth rectangle-70"></div>
+
+        <div class="fifth rectangle-64"></div>
+        <div class="fifth rectangle-71"></div>
+       
+        <div class="first operation-theater-1 operation-theater inter-semi-bold-white-30px">DIFFERNTIAL PRESSURE 1</div>
+        <div class="second operation-theater-2 operation-theater inter-semi-bold-white-30px">DIFFERNTIAL PRESSURE 2
+        </div>
+        <div class="third operation-theater-3 operation-theater inter-semi-bold-white-30px">DIFFERNTIAL PRESSURE 3</div>
+        <div class="fourth operation-theater-4 operation-theater inter-semi-bold-white-30px">DIFFERNTIAL PRESSURE 4
+        </div>
+        <div class="fifth operation-theater-5 operation-theater inter-semi-bold-white-30px">DIFFERNTIAL PRESSURE 5</div>
+
+        <div class="first pressure-3 pressure-5 inter-medium-catalina-blue-17-2px">{{ data[0][1] }}</div>
+        <div class="first price-3 valign-text-middle price-5">{{ data[0][2] }}pa</div>
+
+        <div class="second pressure inter-medium-catalina-blue-17-1px">{{ data[1][1] }}</div>
+        <div class="second price valign-text-middle">{{ data[1][2] }}pa</div>
+
+        <div class="third pressure-4 pressure-5 inter-medium-catalina-blue-17-2px">{{ data[2][1] }}</div>
+        <div class="third price-4 valign-text-middle price-5">{{ data[2][2] }}pa</div>
+
+        <div class="fourth pressure-1 pressure-5 inter-medium-catalina-blue-16-8px">{{ data[3][1] }}</div>
+        <div class="fourth price-1 valign-text-middle price-5">{{ data[3][2] }}pa</div>
+
+        <div class="fifth pressure-2 pressure-5 inter-medium-catalina-blue-16-9px">{{ data[4][1] }}</div>
+        <div class="fifth price-2 valign-text-middle price-5">{{ data[4][2] }}pa</div>
+
+        <h1 class="title">Dashboard</h1>
+        <p class="address-25 address-26" id="datetime">&nbsp;&nbsp;</p>
+        <img class="first vector-16" src="../static/img/vector-16.svg" alt="Vector" />
+
+        <img class="first ellipse-42 ellipse" src="../static/img/ellipse-42.svg" alt="Ellipse 42" />
+        <img class="first gauge-3 gauge" src="../static/img/gauge-3@2x.png" alt="gauge 3" />
+
+        <img class="second ellipse-44 ellipse" src="../static/img/ellipse-44.svg" alt="Ellipse 44" />
+        <img class="second gauge-4 gauge" src="../static/img/gauge-3@2x.png" alt="gauge 4" />
+
+        <img class="third ellipse-46 ellipse" src="../static/img/ellipse-46.svg" alt="Ellipse 46" />
+        <img class="third gauge-5 gauge" src="../static/img/gauge-3@2x.png" alt="gauge 5" />
+
+        <img class="fourth ellipse-50 ellipse" src="../static/img/ellipse-50.svg" alt="Ellipse 50" />
+        <img class="fourth gauge-7 gauge" src="../static/img/gauge-3@2x.png" alt="gauge 7" />
+
+        <img class="fifth ellipse-48 ellipse" src="../static/img/ellipse-48.svg" alt="Ellipse 48" />
+        <img class="fifth gauge-6 gauge" src="../static/img/gauge-3@2x.png" alt="gauge 6" />       
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  var today = new Date();
+  var datetime = document.getElementById("datetime");
+  datetime.innerHTML = today.toLocaleString();
+</script>
+
+</html>

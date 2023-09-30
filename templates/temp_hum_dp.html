@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Values</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js' ?></script>
+
+</head>
+<style>
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .col {
+        flex: 1;
+    }
+
+    .svg-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+</style>
+
+<body>
+    <div class="container-fluid " style="background-color: #ffffff;">
+
+        <div class="row">
+            <div class="col">
+                <div class="m-4 ">
+                    <img src="../static/img/Toshiba_logo.svg.png" style="height: 30px;">
+                </div>
+            </div>
+            <div class="col ">
+                <span id="currentDateSpan" style="float: right;color: #686868;font-weight: 500;"></span>
+                <br>
+                <span id="currentTimeSpan" style="float: right; color: #686868; font-weight: 500;"></span>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="row p-5 justify-content-center">
+
+            <div class="row p-5">
+                <div class="box pl-5 pr-5 pb-5 pt-3" style="background-color: #EAF4FE;border-radius: 20px;">
+                    <h4 style="color: #233A5A; font-weight: 600; font-size: 29px;">Bay</h4>
+                    <hr>
+                    <div class="row p-3">
+                        <div class="col temprature">
+                            <h4 class="text-center" style="color: #233A5A; font-weight: 400; font-size: 26px;">
+                                Temperature </h4>
+                            <br>
+                            <div class="box pl-3 pr-3"
+                                style="border: 3px solid #000000; border-radius: 7px; margin-bottom: 20px;">
+                                <h4 class="text-center" style="color: #233A5A; font-weight: 600; font-size: 45px;">
+                                    <span class="value" id="temp">{{rows[3]}}
+                                    </span><span>°C</span>
+                                </h4>
+                            </div>
+
+                        </div>
+
+                        <div class="col" style="margin-top: 20px;"></div>
+                        <div class="col humidity">
+                            <h4 class="text-center" style="color: #233A5A; font-weight: 400; font-size: 26px;">Humidity
+                            </h4>
+                            <br>
+                            <div class="box pl-3 pr-3"
+                                style="border: 3px solid #000000; border-radius: 7px; margin-bottom: 20px;">
+                                <h4 class="text-center" style="color: #233A5A; font-weight: 600; font-size: 45px;">
+                                    <span class="value" id="hum">{{rows[4]}}
+                                    </span><span>%</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row p-3 diff_pres">
+                        <h4 class="text-center pr-3" style="color: #233A5A; font-weight: 400; font-size: 26px;">
+                            Differential Pressure</h4>
+                        <div class="box pl-3 pr-3"
+                            style="border: 3px solid #000000; border-radius: 7px; margin-bottom: 20px;">
+                            <h4 class="text-center" style="color: #233A5A; font-weight: 600; font-size: 45px;">
+                                <span class="value" id="dp">{{rows[2]}}
+                                </span><span>pa</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="px-5 py-2"
+        style="background-color: #3e3e62; color:#e5ecf4; display: flex; align-items: center; justify-content: flex-end;">
+        Powered by EVOLUZN</div>
+
+    <script src="../static/js/function.js"></script>
+</body>
+
+</html>
